@@ -1,0 +1,28 @@
+@layer base {
+  :root { color-scheme: dark; font-family: system-ui, sans-serif; background: #000; color: #fff; }
+  body { margin: 0; }
+  main { max-width: 760px; margin: 0 auto; padding: 28px 20px; }
+  header { display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1px solid #333; padding-bottom: 18px; }
+  h1 { font-family: ui-monospace, monospace; font-size: 24px; letter-spacing: -1px; margin: 0; }
+  h2 { font-size: 20px; margin: 32px 0 16px; }
+  p { line-height: 1.5; }
+  ul { list-style: none; padding: 0; }
+  li { padding: 14px 0; border-bottom: 1px solid #333; display: flex; gap: 12px; align-items: baseline; }
+  li > span { flex: 1; overflow-wrap: anywhere; }
+  form { display: flex; flex-wrap: wrap; gap: 10px; margin: 24px 0; }
+  input { background: #000; border: 1px solid #666; padding: 10px; color: #fff; min-width: 0; flex: 1; }
+  input[type=checkbox] { flex: none; accent-color: #fff; }
+  button { background: #fff; color: #000; padding: 10px 16px; border: 1px solid #fff; cursor: pointer; }
+  button:disabled { opacity: .5; cursor: default; }
+  button.subtle { background: #000; color: #fff; border-color: #666; }
+  :focus-visible { outline: 2px solid #83b5ff; outline-offset: 3px; }
+  small, time { font-family: ui-monospace, monospace; font-size: 12px; }
+  [role=alert] { color: #ff9a9a; }
+  meter { flex: 1; width: 100%; }
+  meter::-webkit-meter-bar { background: #222; border: 0; border-radius: 0; }
+  meter::-webkit-meter-optimum-value { background: #fff; }
+  meter::-moz-meter-bar { background: #fff; }
+  .done { text-decoration: line-through; }
+  .presence { padding: 12px 0; font-size: 13px; }
+  @media (max-width: 480px) { main { padding: 20px 12px; } li { flex-wrap: wrap; } }
+}
